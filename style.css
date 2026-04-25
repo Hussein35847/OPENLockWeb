@@ -762,3 +762,112 @@ input[type="range"]::-webkit-slider-thumb:hover {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Light Mode Overrides */
+body.light-mode {
+    --bg-gradient: #f0f4f8;
+    --surface-bg: #ffffff;
+    --surface-border: #e2e8f0;
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+    --accent-primary: #2563eb;
+    --accent-secondary: #3b82f6;
+    --accent-hover: #1d4ed8;
+    --shadow-glow: rgba(37, 99, 235, 0.2);
+}
+
+body.light-mode .generator-container,
+body.light-mode .modal-card {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .password-display,
+body.light-mode .type-selector,
+body.light-mode .app-tabs,
+body.light-mode .hard-card,
+body.light-mode .hard-password-row {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: var(--surface-border);
+}
+
+body.light-mode .preset-btn,
+body.light-mode .vault-item,
+body.light-mode .custom-input,
+body.light-mode .vault-act-btn,
+body.light-mode .btn-secondary {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+body.light-mode .preset-btn:hover,
+body.light-mode .vault-item:hover,
+body.light-mode .vault-act-btn:hover,
+body.light-mode .btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .preset-btn.active {
+    background: rgba(37, 99, 235, 0.15);
+    color: var(--accent-primary);
+    border-color: var(--accent-primary);
+}
+
+body.light-mode .length-value {
+    background: rgba(37, 99, 235, 0.15);
+    color: var(--accent-primary);
+}
+
+body.light-mode .vault-btn {
+    background: rgba(37, 99, 235, 0.1);
+}
+
+body.light-mode .vault-btn:hover {
+    background: var(--accent-primary);
+    color: white;
+}
+
+body.light-mode .strength-bar,
+body.light-mode input[type="range"] {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .checkbox-custom,
+body.light-mode .radio-custom {
+    background: rgba(255, 255, 255, 1);
+}
+
+body.light-mode .modal-card {
+    background: var(--surface-bg);
+}
+
+body.light-mode .checkbox-option input[type="checkbox"]:checked~.checkbox-custom {
+    background: var(--accent-primary);
+}
+
+.download-extension-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    color: #000;
+    padding: 0.75rem 1.25rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 15px var(--shadow-glow);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.download-extension-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--shadow-glow);
+    background: linear-gradient(135deg, var(--accent-secondary) 0%, var(--accent-primary) 100%);
+}
+
+body.light-mode .download-extension-btn {
+    color: white;
+}
