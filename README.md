@@ -1,158 +1,110 @@
-# 🔐 OPEN OTP
+# 🌐 OPEN Password (Web)
 
-**OPEN OTP** is a lightweight, privacy-focused browser extension that generates Time-Based One-Time Passwords (TOTP) for two-factor authentication (2FA).
+**OPEN Password (Web)** is a modern, privacy-focused web application for generating strong passwords and managing secure credentials.
 
-It is part of the **OPEN Security Ecosystem**, designed to work seamlessly with **OPEN Password** to deliver a fast, secure, and modern authentication experience.
+It delivers a fast and clean user experience directly in the browser—no installation required.
 
 ---
 
 ## 🌐 OPEN Ecosystem
 
-The OPEN ecosystem simplifies secure login:
+Part of the **OPEN Security Ecosystem**:
 
-### 🔑 OPEN Password
+### 🌐 OPEN Password (Web) — this project
 
-* Generate strong passwords
-* Save credentials securely
+* Generate secure passwords instantly
+* Clean, accessible UI
+* Lightweight and fast
+
+### 🔑 OPEN Password (Extension)
+
 * Autofill login forms
+* Auto-detect password fields
+* Save credentials securely
 
-### 🔐 OPEN OTP (this project)
+### 🔐 OPEN OTP
 
-* Generate 6-digit verification codes
-* Support multiple accounts
-* Provide secure 2FA codes
+* Generate 2FA codes
+* Enhance login security
 
 👉 Together, they provide:
 
-* Autofill + OTP in one flow
-* Faster and more secure logins
-* A complete authentication solution
+* Full authentication flow
+* Password + OTP integration
+* Seamless security experience
 
 ---
 
 ## 🚀 Features
 
-* 🔢 Generate 6-digit TOTP codes (refresh every 30 seconds)
-* ⏱ Real-time countdown timer
-* ➕ Add multiple accounts
-* 📷 QR code support (otpauth:// format)
-* 🔐 100% local encrypted storage
+* 🔐 Strong password generator (custom length & complexity)
+* ⚡ Instant generation (no delays)
 * 📋 One-click copy to clipboard
+* 🎯 Simple and intuitive UI
+* 📱 Fully responsive (mobile & desktop)
 * ⚡ Fast and lightweight
-* 🎨 Clean and minimal UI
 
 ---
 
 ## 🚀 Live Demo
 
-Try the OPEN experience:
-
 👉 https://premiumpasswordgenerator.web.app/
 
-> ⚠️ Note: This demo showcases the UI/experience.
-> For full TOTP functionality, use the browser extension.
+> ⚠️ Note: This is a standalone generator.
+> For autofill and vault features, use the browser extension.
 
 ---
 
-## 💡 Why OPEN OTP?
+## 🎨 UI & Design
 
-* 🔐 100% Local-first (no cloud, no tracking, no data leaks)
-* ⚡ Instant code generation
-* 🧩 Works seamlessly with OPEN Password
-* 🛡️ Privacy-focused design
+* Minimal and modern interface
+* Focus on usability and speed
+* Smooth interactions and clean layout
 
 ---
 
 ## 🧠 How It Works
 
-OPEN OTP uses the Time-Based One-Time Password (TOTP) algorithm (RFC 6238):
-
-* A secret key is stored securely
-* A 6-digit code is generated every 30 seconds
-* Codes are time-based and expire automatically
-
----
-
-## 🔗 Integration with OPEN Password
-
-When used together:
-
-1. OPEN Password autofills:
-
-   * Email
-   * Password
-
-2. OPEN OTP provides:
-
-   * Instant 2FA code
-
-3. Login is completed in seconds ⚡
-
-> 🎯 Goal: Seamless and secure login experience
+* Generates secure random passwords in the browser
+* No data is stored or transmitted
+* Everything runs locally on your device
 
 ---
 
 ## 🔐 Security
 
-* All secrets are stored **locally on the user's device**
-* Data is encrypted using the **Web Crypto API (AES)**
-* No external servers or cloud sync
-* TOTP codes generated using **otplib**
+* 100% client-side (runs in your browser)
+* No data storage
+* No tracking or analytics
+* No external servers involved
 
-> ⚠️ Warning: If you lose your stored secrets, you cannot recover your accounts. Always backup your keys securely.
+> ✅ Safe for generating passwords anytime
 
 ---
 
 ## 🛠️ Tech Stack
 
+* HTML5
+* CSS3
 * JavaScript (Vanilla)
-* HTML5 & CSS3
-* Web Crypto API (local encryption)
-* otplib (TOTP generation)
-* Chrome Extension APIs
 
 ---
 
-## 📦 Installation
+## 📦 Usage
 
-### 🔧 Load Extension (Developer Mode)
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Hussein35847/OPEN-TOTP.git
-   ```
-
-2. Open Chrome:
-
-   ```
-   chrome://extensions/
-   ```
-
-3. Enable **Developer Mode**
-
-4. Click **Load unpacked**
-
-5. Select the project folder
-
----
-
-## 📱 Usage
-
-1. Open the extension
-2. Add account (QR code or secret key)
-3. View generated OTP codes
-4. Use during login
+1. Open the web app
+2. Customize password settings
+3. Generate password
+4. Copy and use instantly
 
 ---
 
 ## 🔮 Future Improvements
 
-* 🔗 Deeper integration with OPEN Password
-* 🔑 Master password protection
-* 📱 Mobile version
+* 🔗 Integration with OPEN Password extension
+* 🔐 Optional secure vault (local)
 * 🌙 Dark mode
-* 🔔 Smart OTP suggestions
+* 📊 Password strength meter
 
 ---
 
