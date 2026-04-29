@@ -1,132 +1,109 @@
-# 🌐 OPEN Password (Web)
+# 🌐 OpenLock Web
 
-**OPEN Password (Web)** is a modern, privacy-focused web application for generating strong passwords and managing secure credentials.
+**OpenLock Web** is the browser-based version of **OpenLock**, a privacy-first password manager and TOTP (2FA) authenticator.
 
-It delivers a fast and clean user experience directly in the browser—no installation required.
-
----
-
-## 🌐 OPEN Ecosystem
-
-Part of the **OPEN Security Ecosystem**:
-
-### 🌐 OPEN Password (Web) — this project
-
-* Generate secure passwords instantly
-* Clean, accessible UI
-* Lightweight and fast
-
-### 🔑 OPEN Password (Extension)
-
-* Autofill login forms
-* Auto-detect password fields
-* Save credentials securely
-
-### 🔐 OPEN OTP
-
-* Generate 2FA codes
-* Enhance login security
-
-👉 Together, they provide:
-
-* Full authentication flow
-* Password + OTP integration
-* Seamless security experience
+> 🔐 Fully client-side — no servers, no tracking, no data leaves your device.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-* 🔐 Strong password generator (custom length & complexity)
-* ⚡ Instant generation (no delays)
-* 📋 One-click copy to clipboard
-* 🎯 Simple and intuitive UI
-* 📱 Fully responsive (mobile & desktop)
-* ⚡ Fast and lightweight
+* 🔑 **Password Manager**
+
+  * Store and manage credentials securely
+  * Fast copy & clean UI
+
+* 🔐 **TOTP Generator (2FA)**
+
+  * Generate 6-digit authentication codes
+  * 30-second refresh timer
+
+* 🔒 **End-to-End Encryption**
+
+  * AES-GCM via Web Crypto API
+  * Master password protected
+
+* 💾 **Local Storage Only**
+
+  * Runs entirely in your browser
+  * No backend or cloud
+
+* 🔄 **Manual Sync (Secure Backup)**
+
+  * Export encrypted vault file
+  * Import on any device
 
 ---
 
-## 🚀 Live Demo
+## 🧩 How It Works
 
-👉 https://premiumpasswordgenerator.web.app/
-
-> ⚠️ Note: This is a standalone generator.
-> For autofill and vault features, use the browser extension.
-
----
-
-## 🎨 UI & Design
-
-* Minimal and modern interface
-* Focus on usability and speed
-* Smooth interactions and clean layout
+* All data is encrypted locally using your master password
+* Nothing is sent to any server
+* You control your data completely
 
 ---
 
-## 🧠 How It Works
+## ⚙️ Usage
 
-* Generates secure random passwords in the browser
-* No data is stored or transmitted
-* Everything runs locally on your device
+### 🔐 First Setup
+
+* Set a master password
+* This is required to unlock your vault
+
+### 🔑 Add Password
+
+* Enter site + username + password
+* Save securely
+
+### 🔐 Add TOTP
+
+* Enter secret key
+* Codes generate automatically
+
+---
+
+## 💻 Installation
+
+### Run Locally
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Hussein35847/OPENLock.git
+   ```
+
+2. Open the project folder
+
+3. Open `index.html` in your browser
+
+---
+
+## 🔄 Backup & Restore
+
+### Export
+
+* Download encrypted `.json` file
+
+### Import
+
+* Upload file + enter master password
+
+> 💡 Tip: Store backups in your own cloud (Drive, Dropbox, USB)
 
 ---
 
 ## 🔐 Security
 
-* 100% client-side (runs in your browser)
-* No data storage
-* No tracking or analytics
-* No external servers involved
+* AES-GCM encryption
+* PBKDF2 key derivation
+* Unique IV per encryption
+* No plaintext storage
+* No master password storage
 
-> ✅ Safe for generating passwords anytime
-
----
-
-## 🛠️ Tech Stack
-
-* HTML5
-* CSS3
-* JavaScript (Vanilla)
+> ⚠️ If you lose your master password, your data cannot be recovered.
 
 ---
 
-## 📦 Usage
+## 🔥 Vision
 
-1. Open the web app
-2. Customize password settings
-3. Generate password
-4. Copy and use instantly
-
----
-
-## 🔮 Future Improvements
-
-* 🔗 Integration with OPEN Password extension
-* 🔐 Optional secure vault (local)
-* 🌙 Dark mode
-* 📊 Password strength meter
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
----
-
-## 📄 License
-
-MIT License
-
----
-
-## 👨‍💻 Author
-
-**Hussein Amer**
-
----
-
-## ⭐ Support
-
-If you like this project, give it a star ⭐
-and support the OPEN ecosystem 🚀
+> Build secure tools that work entirely on the client — no trust required.
