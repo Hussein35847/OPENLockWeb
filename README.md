@@ -63,19 +63,6 @@
 
 ---
 
-## 🔄 Backup & Restore
-
-### Export
-
-* Download encrypted `.json` file
-
-### Import
-
-* Upload file + enter master password
-
-> 💡 Tip: Store backups in your own cloud (Drive, Dropbox, USB)
-
----
 
 ## 🔐 Security
 
